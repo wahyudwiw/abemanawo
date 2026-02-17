@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>White Cream Luxury Wedding Organizer</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- Elegant Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cormorant+Garamond:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<style>
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:#f8f5f0;color:#3e3e3e;}
+
+.navbar{background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(255,255,255,0.7),rgba(248,245,240,0.9)),
+url('https://images.unsplash.com/photo-1519741497674-611481863552');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{font-family:'Playfair Display',serif;font-size:60px;}
+
+.btn-cream{
+background:#d6c6b8;
+border:none;
+color:#3e3e3e;
+font-weight:600;
+transition:0.3s;
+}
+.btn-cream:hover{background:#c8b5a6;}
+
+.section-padding{padding:100px 0;}
+
+.card-custom{
+background:white;
+border-radius:20px;
+transition:0.4s;
+border:1px solid #eee;
+}
+.card-custom:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Packages */
+h2,h3,h4{font-family:'Playfair Display',serif;}
+.package-subtitle{
+font-family:'Cormorant Garamond',serif;
+font-size:20px;
+color:#8c7b6b;
+}
+.package-card{
+background:white;
+border-radius:25px;
+border:1px solid #eee;
+padding:40px;
+transition:0.4s;
+}
+.package-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+.package-price{
+font-size:30px;
+font-weight:600;
+margin:20px 0;
+}
+.toggle-btn{
+background:none;
+border:none;
+color:#a18a78;
+font-weight:500;
+}
+
+/* Gallery */
+.gallery img{
+border-radius:20px;
+transition:0.4s;
+}
+.gallery img:hover{transform:scale(1.05);}
+
+/* Office */
+.office-img{
+max-width: 350px;   /* ukuran foto */
+width:100%;
+height:auto;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+display:block;
+margin:0 auto 20px auto;
+object-fit:cover;
+}
+
+
+/* footer */
+.modern-footer{
+background:linear-gradient(135deg,#f3eee8,#ebe4dc);
+padding:80px 0 40px;
+}
+
+.footer-logo{
+font-family:'Playfair Display', serif;
+font-size:30px;
+letter-spacing:4px;
+margin-bottom:5px;
+}
+
+.footer-sub{
+color:#8c7b6b;
+margin:0;
+}
+
+.footer-menu a{
+margin:0 12px;
+text-decoration:none;
+color:#6c6c6c;
+font-weight:500;
+transition:0.3s;
+}
+
+.footer-menu a:hover{
+color:#d6c6b8;
+}
+
+.footer-social a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:48px;
+height:48px;
+margin-left:12px;
+border-radius:50%;
+background:white;
+color:#3e3e3e;
+font-size:18px;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.footer-social a:hover{
+transform:translateY(-5px);
+background:#d6c6b8;
+color:white;
+}
+
+.footer-line{
+margin:50px 0 25px;
+border-color:#ddd;
+}
+
+.footer-copy{
+color:#999;
+font-size:14px;
+}
+
+
+
+
+/* Floating */
+.floating-wa{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+color:white;
+font-size:22px;
+}
+.floating-social{
+position:fixed;
+bottom:20px;
+left:20px;
+}
+.floating-social a{
+display:block;
+margin-bottom:10px;
+padding:12px;
+border-radius:50%;
+color:white;
+font-size:18px;
+text-align:center;
+}
+.gallery img{
+border-radius:20px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+.about-modern {
+    background:#f5f5f5;
+}
+
+.about-title {
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    letter-spacing:2px;
+    margin-bottom:25px;
+}
+
+.about-text {
+    color:#6c7a89;
+    line-height:1.9;
+    font-size:16px;
+    max-width:500px;
+}
+
+.about-btn {
+    background:#f7931e;
+    color:white;
+    padding:12px 35px;
+    border-radius:30px;
+    border:none;
+    margin-top:30px;
+    transition:0.3s;
+}
+
+.about-btn:hover {
+    background:#e67e00;
+}
+
+.about-images {
+    position:relative;
+    height:450px;
+}
+
+.about-img-1 {
+    position:absolute;
+    top:0;
+    left:50px;
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.about-img-2 {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+@media(max-width:992px){
+    .about-images{
+        position:static;
+        height:auto;
+        margin-top:40px;
+        text-align:center;
+    }
+
+    .about-img-1,
+    .about-img-2{
+        position:static;
+        width:80%;
+        margin-bottom:20px;
+    }
+}
+.video-section {
+    background:#f8f5f0;
+}
+
+.video-slide {
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.video-slide:hover {
+    transform:translateY(-8px);
+}
+
+.video-slide img {
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.play-btn {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70px;
+    height:70px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    color:#d6c6b8;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color:#d6c6b8;
+    border-radius:50%;
+}
+.video-wrapper{
+position:relative;
+max-width:900px;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 25px 60px rgba(0,0,0,0.15);
+}
+
+.video-wrapper video{
+width:100%;
+display:block;
+border-radius:25px;
+}
+
+.video-overlay{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:40%;
+background:linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+pointer-events:none;
+}
+.video-section{
+background:linear-gradient(135deg,#f8f5f0,#f1ebe3);
+}
+
+.video-glass{
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:30px;
+box-shadow:0 30px 70px rgba(0,0,0,0.1);
+}
+
+.video-slide video{
+width:100%;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+background-color:#d6c6b8;
+border-radius:50%;
+padding:15px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#home">
+ABEMANA Wedding Organizer
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navmenu">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#packages">Packages</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#gallery">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#videos">Videos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#office">Office</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Consultation</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container">
+<h1 class="mb-4">Elegant & Timeless Wedding</h1>
+<p class="lead mb-4">Soft • Romantic • Luxurious</p>
+<a href="#contact" class="btn btn-cream btn-lg">Book Now</a>
+</div>
+</section>
+
+<!-- ABOUT US MODERN STYLE -->
+<section class="section-padding about-modern" id="about">
+<div class="container">
+<div class="row align-items-center">
+
+<!-- LEFT TEXT -->
+<div class="col-lg-6">
+<h2 class="about-title">ABOUT US</h2>
+
+<p class="about-text">
+ABEMANA Wedding Organizer adalah perusahaan profesional di bidang 
+perencanaan dan manajemen pernikahan yang menghadirkan konsep elegan, 
+modern, dan berkelas. 
+
+Dengan pendekatan personal dan perhatian pada setiap detail, kami 
+mewujudkan perayaan cinta yang dirancang sesuai dengan visi dan 
+impian setiap pasangan, menciptakan momen sakral yang tak terlupakan.
+</p>
+
+
+
+</div>
+
+<!-- RIGHT IMAGES -->
+<div class="col-lg-6">
+<div class="about-images">
+
+<img src="assets/img/f1.jpeg"
+class="about-img-1">
+
+<img src="assets/img/f2.jpeg"
+class="about-img-2">
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+
+<!-- PACKAGES -->
+<section class="section-padding text-center" id="packages">
+<div class="container">
+<h2 class="mb-3">Wedding Packages</h2>
+<p class="package-subtitle mb-5">Choose the perfect package for your unforgettable moment</p>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+<div class="package-card h-100">
+<h4>Silver</h4>
+<div class="package-price">Rp 35jt</div>
+<p>Elegant intimate wedding with essential services.</p>
+<button class="toggle-btn mb-3" data-bs-toggle="collapse" data-bs-target="#silverDetail">
+View Details ↓
+</button>
+<div class="collapse" id="silverDetail">
+<ul class="list-unstyled text-start">
+<li>✔ Basic Decoration</li>
+<li>✔ MC Professional</li>
+<li>✔ Photography</li>
+<li>✔ Bridal Makeup</li>
+<li>✔ WO Team</li>
+</ul>
+</div>
+<button class="btn btn-cream w-100 mt-3 choose-package" data-package="Silver">
+Select Package
+</button>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="package-card h-100" style="border:2px solid #d6c6b8;">
+<span class="badge bg-dark mb-2">Most Popular</span>
+<h4>Gold</h4>
+<div class="package-price">Rp 65jt</div>
+<p>Luxury decoration and enhanced guest experience.</p>
+<button class="toggle-btn mb-3" data-bs-toggle="collapse" data-bs-target="#goldDetail">
+View Details ↓
+</button>
+<div class="collapse" id="goldDetail">
+<ul class="list-unstyled text-start">
+<li>✔ Premium Decoration</li>
+<li>✔ Live Music</li>
+<li>✔ Full Documentation</li>
+<li>✔ Bridal Styling</li>
+<li>✔ Full WO Team</li>
+</ul>
+</div>
+<button class="btn btn-cream w-100 mt-3 choose-package" data-package="Gold">
+Select Package
+</button>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="package-card h-100">
+<h4>Platinum</h4>
+<div class="package-price">Rp 120jt</div>
+<p>Exclusive international luxury wedding concept.</p>
+<button class="toggle-btn mb-3" data-bs-toggle="collapse" data-bs-target="#platinumDetail">
+View Details ↓
+</button>
+<div class="collapse" id="platinumDetail">
+<ul class="list-unstyled text-start">
+<li>✔ International Decoration</li>
+<li>✔ Exclusive Venue</li>
+<li>✔ Premium Catering</li>
+<li>✔ Live Band</li>
+<li>✔ VIP Guest Experience</li>
+</ul>
+</div>
+<button class="btn btn-cream w-100 mt-3 choose-package" data-package="Platinum">
+Select Package
+</button>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="section-padding bg-white" id="gallery">
+<div class="container text-center">
+<h2 class="mb-3">Wedding Gallery</h2>
+<p class="mb-5" style="color:#8c7b6b;">
+Beautiful moments from our exclusive wedding events
+</p>
+
+<div class="row gallery">
+
+<div class="col-md-4 mb-4">
+<img src="assets/img/f1.jpeg" class="img-fluid">
+</div>
+
+<div class="col-md-4 mb-4">
+<img src="assets/img/f2.jpeg" class="img-fluid">
+</div>
+
+<div class="col-md-4 mb-4">
+<img src="assets/img/f3.jpeg" class="img-fluid">
+</div>
+
+<div class="col-md-4 mb-4">
+<img src="assets/img/f4.jpeg" class="img-fluid">
+</div>
+
+<div class="col-md-4 mb-4">
+<img src="assets/img/f5.jpeg" class="img-fluid">
+</div>
+
+<div class="col-md-4 mb-4">
+<img src="assets/img/f6.jpeg" class="img-fluid">
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- VENUE REVIEW VIDEOS -->
+<section class="section-padding video-section" id="videos">
+<div class="container text-center">
+
+<h2 class="mb-3" style="font-family:'Playfair Display', serif;">
+Venue Review Videos
+</h2>
+
+<p class="mb-5" style="color:#8c7b6b;">
+Explore our exclusive venue experiences
+</p>
+
+<div class="video-glass" data-aos="fade-up">
+
+<div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<!-- VIDEO 1 -->
+<div class="carousel-item active">
+<div class="video-slide">
+<video autoplay muted loop playsinline controls>
+<source src="assets/vidio/v1.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+<!-- VIDEO 2 -->
+<div class="carousel-item">
+<div class="video-slide">
+<video autoplay muted loop playsinline controls>
+<source src="assets/vidio/v2.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+<!-- VIDEO 3 -->
+<div class="carousel-item">
+<div class="video-slide">
+<video autoplay muted loop playsinline controls>
+<source src="assets/vidio/v3.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- OFFICE -->
+<section class="section-padding bg-light" id="office">
+<div class="container">
+<div class="row align-items-center">
+
+<!-- LEFT SIDE -->
+<div class="col-md-6 mb-4">
+<h2 class="mb-4">Visit Our Showroom</h2>
+<p>Temukan inspirasi wedding impian Anda langsung di showroom kami.</p>
+
+<div class="card card-custom p-4 mt-4">
+<p><i class="bi bi-geo-alt-fill me-2"></i>
+Jl. Beringin Raya, RT.01/RW.1, Bringin, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50189
+</p>
+
+<p><i class="bi bi-telephone-fill me-2"></i>
++62 812-3456-7890
+</p>
+
+<p><i class="bi bi-clock-fill me-2"></i>
+Senin - Minggu | 09.00 - 21.00
+</p>
+
+<a href="https://maps.app.goo.gl/RqYyPmcSxt3Qu1db6"
+target="_blank"
+class="btn btn-cream mt-3">
+Open in Google Maps
+</a>
+
+</div>
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="col-md-6">
+
+<img src="assets/img/maps1.png"
+class="img-fluid office-img mb-4"
+alt="Showroom Location">
+
+<div class="map-box">
+<div class="ratio ratio-16x9">
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.11219503172!2d110.3338069!3d-6.996066099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b000542cb3f%3A0xa04c72ff92b0adb9!2sABEMANA%20WEDDING%20ORGANIZER!5e0!3m2!1sid!2sid!4v1771293798921!5m2!1sid!2sid"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CONSULTATION MODERN -->
+<section class="section-padding contact-section" id="contact">
+<div class="container text-center">
+
+<div class="contact-card">
+
+<h2 class="contact-title">Private Wedding Consultation</h2>
+
+<form id="waForm">
+
+<input type="text" id="nama" 
+class="form-control mb-3" 
+placeholder="Full Name" required>
+
+<input type="date" id="tanggal" 
+class="form-control mb-3" required>
+
+<select id="paket" class="form-control mb-4">
+<option>Silver Package</option>
+<option>Gold Package</option>
+<option>Platinum Package</option>
+</select>
+
+<button class="btn btn-cream w-100 mb-4">
+Secure via WhatsApp
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+
+
+<footer class="modern-footer">
+<div class="container">
+
+<div class="row align-items-center gy-4">
+
+<!-- LEFT BRAND -->
+<div class="col-lg-4 text-center text-lg-start">
+<h3 class="footer-logo">ABEMANA</h3>
+<p class="footer-sub">Wedding Organizer</p>
+</div>
+
+<!-- CENTER NAV -->
+<div class="col-lg-4 text-center">
+<div class="footer-menu">
+<a href="#about">About</a>
+<a href="#packages">Packages</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Consultation</a>
+</div>
+</div>
+
+<!-- RIGHT SOCIAL -->
+<div class="col-lg-4 text-center text-lg-end">
+<div class="footer-social">
+
+<a href="https://www.instagram.com/abemana.weddingorganizer?igsh=MXU1enpvZ3BjYzlscA==" target="_blank">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@abemana.wo?_r=1&_t=ZS-93zAlspwYTQ" target="_blank">
+<i class="bi bi-tiktok"></i>
+</a>
+
+<a href="https://youtube.com/@abemanaweddingorganizer?si=ln4I1CnlSg6sZk77" target="_blank">
+<i class="bi bi-youtube"></i>
+</a>
+
+</div>
+</div>
+
+</div>
+
+<hr class="footer-line">
+
+<div class="text-center footer-copy">
+© 2026 ABEMANA Wedding Organizer. All Rights Reserved.
+</div>
+
+</div>
+</footer>
+
+
+
+
+<a href="https://wa.me/62895327302297" target="_blank" class="floating-wa">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.querySelectorAll(".choose-package").forEach(btn=>{
+btn.addEventListener("click",function(){
+document.getElementById("paket").value=this.dataset.package;
+document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+});
+});
+
+document.getElementById("waForm").addEventListener("submit",function(e){
+e.preventDefault();
+var nama=document.getElementById("nama").value;
+var tanggal=document.getElementById("tanggal").value;
+var paket=document.getElementById("paket").value;
+
+var nomor="62895327302297";
+var text=`Halo ABEMANA Wedding Organizer 🤍
+Nama: ${nama}
+Tanggal: ${tanggal}
+Paket: ${paket}`;
+
+window.open(`https://wa.me/${nomor}?text=${encodeURIComponent(text)}`,'_blank');
+});
+</script>
+<div class="video-slide" data-bs-toggle="modal" data-bs-target="#localVideoModal">
+
+
+<div class="play-btn">
+<i class="bi bi-play-fill"></i>
+</div>
+
+</div>
+<div class="modal fade" id="localVideoModal">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body p-0">
+
+</div>
+</div>
+</div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+
+
+
+</body>
+</html>
